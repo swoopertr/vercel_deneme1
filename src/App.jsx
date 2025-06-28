@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  console.log(import.meta.env);
 
   return (
     <>
@@ -17,7 +18,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React + Vercel (Tunc)</h1>
+      <h1>Vite + React + Vercel ({import.meta.env.VITE_NAME})</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 3)}>
           count is {count}
