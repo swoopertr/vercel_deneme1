@@ -19,7 +19,7 @@ function App() {
       </div>
       <h1>Vite + React + Vercel (Tunc)</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 3)}>
+        <button onClick={() => setCount((count) => count + 5)}>
           count is {count}
         </button>
         <p>
